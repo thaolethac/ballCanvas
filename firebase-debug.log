@@ -1,0 +1,65 @@
+[debug] [2022-12-08T17:35:55.571Z] ----------------------------------------------------------------------
+[debug] [2022-12-08T17:35:55.573Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\thaol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-08T17:35:55.573Z] CLI Version:   11.17.0
+[debug] [2022-12-08T17:35:55.573Z] Platform:      win32
+[debug] [2022-12-08T17:35:55.573Z] Node Version:  v18.12.1
+[debug] [2022-12-08T17:35:55.579Z] Time:          Fri Dec 09 2022 00:35:55 GMT+0700 (Indochina Time)
+[debug] [2022-12-08T17:35:55.580Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-08T17:35:55.587Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-08T17:35:55.587Z] > authorizing via signed-in user (lethacthao70@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\thaol\OneDrive\Desktop\learnCanvas
+
+[debug] [2022-12-08T17:36:08.684Z] ----------------------------------------------------------------------
+[debug] [2022-12-08T17:36:08.686Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\thaol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-08T17:36:08.686Z] CLI Version:   11.17.0
+[debug] [2022-12-08T17:36:08.686Z] Platform:      win32
+[debug] [2022-12-08T17:36:08.686Z] Node Version:  v18.12.1
+[debug] [2022-12-08T17:36:08.687Z] Time:          Fri Dec 09 2022 00:36:08 GMT+0700 (Indochina Time)
+[debug] [2022-12-08T17:36:08.687Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-08T17:36:08.693Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-08T17:36:08.693Z] > authorizing via signed-in user (lethacthao70@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\thaol\OneDrive\Desktop\learnCanvas
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-12-08T17:36:30.912Z] > refreshing access token with scopes: []
+[debug] [2022-12-08T17:36:30.914Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-08T17:36:30.914Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-08T17:36:31.233Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-08T17:36:31.233Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-08T17:36:31.239Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-12-08T17:36:31.239Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"ball","name":"ball"}
+[debug] [2022-12-08T17:36:32.291Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2022-12-08T17:36:32.292Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id must be at least 6 characters long]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id must be at least 6 characters long"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2022-12-08T17:36:32.489Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id must be at least 6 characters long]
+    at responseToError (C:\Users\thaol\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\thaol\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
